@@ -1,8 +1,8 @@
 ---
 site:
-  title: OpenShift GitOps Workshop
+  title: OpenShift 4 Windows Containers Demo
   url: https://openshiftdemos.github.io/OpenShift-4-Windows-Containers-Demo
-  start_page: openshift-gitops-workshop::index.adoc
+  start_page: openshift-4-windows-containers-demo::index.adoc
 
 content:
   sources:
