@@ -62,7 +62,7 @@ $ oc get route netcandystore -n netcandystore -o jsonpath='{.spec.host}{"\n"}'
 ```
 The front page should look like this.
 
-![ncs app](images/ncs.png)
+image::ncs.png[]
 
 Feel free to play around and use the application. You're using an application that's using both Windows and Linux containers running on OpenShift. Pretty cool!
 
