@@ -28,6 +28,5 @@ output:
 
 antora:
   extensions:
-    - id: dev-mode
       require: ./content/lib/dev-mode.js
       enabled: true
