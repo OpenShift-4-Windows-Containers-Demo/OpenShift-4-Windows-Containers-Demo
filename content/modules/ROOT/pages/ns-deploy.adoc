@@ -194,3 +194,4 @@ redhat-demos/netcandystore \
 --set ssh.hostkey=${WSSHKEY} --set ssh.hostname=${WNODE} \
 --set netcandy.image=quay.io/gfontana/netcandystore:servercore1909
 ```
+
