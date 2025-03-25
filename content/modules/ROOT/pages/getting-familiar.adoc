@@ -45,3 +45,4 @@ ip-10-0-237-81.us-east-2.compute.internal   Ready    worker   140m   v1.25.16+1e
 As you can see this is running Windows Server 2019 Datacenter, and the container runtime is docker.
 
 This is installed/managed/controlled by the Windows Machine Config Operator (WMCO). We will explore in a bit.
+
