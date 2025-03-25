@@ -7,7 +7,3 @@
 * Working With The Windows Node
 ** xref:ms-scaling.adoc[Scaling the Windows MachineSet]
 ** xref:exploring-wmco.adoc[Exploring the WMCO]
-* Mixed Linux and Windows Workloads
-** xref:ns-intro.adoc[Introduction]
-** xref:ns-deploy.adoc[Deploying NetCandy Store]
-** xref:ns-explore.adoc[Exploring NetCandy Store]
