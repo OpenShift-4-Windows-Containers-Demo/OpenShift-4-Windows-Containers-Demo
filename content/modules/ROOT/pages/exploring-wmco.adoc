@@ -59,3 +59,5 @@ $ oc get csv -n openshift-windows-machine-config-operator
 NAME                                     DISPLAY                           VERSION   REPLACES                                 PHASE
 windows-machine-config-operator.v3.1.0   Windows Machine Config Operator   3.1.0     windows-machine-config-operator.v3.0.0   Succeeded
 ```
+
+That concludes this demo around OpenShift 4 and Windows Containers. Thanks!
