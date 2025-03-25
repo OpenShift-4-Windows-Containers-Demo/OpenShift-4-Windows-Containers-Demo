@@ -1,6 +1,6 @@
 * xref:index.adoc[Getting Started]
 ** xref:getting-familiar.adoc[Getting familiar with the installation]
-** xref:accessing-windows-node.adoc[Installing The WMCO]
+** xref:accessing-windows-node.adoc[Accessing the Windows Node]
 * Deploying A Sample Application
 ** xref:predeploy-steps.adoc[Predeployment Steps]
 ** xref:deploying-sample-app.adoc[Deploying the Application]
