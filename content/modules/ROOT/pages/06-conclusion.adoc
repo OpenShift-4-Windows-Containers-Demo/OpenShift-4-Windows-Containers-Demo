@@ -21,4 +21,4 @@ Interested in learning more? Check out these other great resources from Red Hat:
 
 ==== http://red.ht/gitops[GitOps Guide to the Galaxy Streaming Series,window='_blank']
 
-test
+test 2
