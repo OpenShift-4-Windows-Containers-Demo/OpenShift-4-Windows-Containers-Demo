@@ -8,16 +8,11 @@ You also have the ability to run application stacks of mixed workloads. In this 
 
 You will be deploying a sample application stack that delivers an eCommerce site, The NetCandy Store. This application is built using Windows Containers working together with Linux Containers.
 
-![mixed-linux-windows](images/mixed-windows-and-linux-workloads.png)
+image::mixed-windows-and-linux-workloads.png[]
+
 
 This application consists of:
 
 * Windows Container running a .NET v4 frontend, which is consuming a backend service.
 * Linux Container running a .NET Core backend service, which is using a database.
 * Linux Container running a MSSql database.
-
-
-
-<br/><br/><br/>
-<br/><br/><br/>
-<br/><br/><br/>
