@@ -1,7 +1,7 @@
 ---
 site:
   title: OpenShift GitOps Workshop
-  url: https://openshiftdemos.github.io/openshift-gitops-workshop
+  url: https://openshiftdemos.github.io/OpenShift-4-Windows-Containers-Demo
   start_page: openshift-gitops-workshop::index.adoc
 
 content:
