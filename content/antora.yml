@@ -1,5 +1,5 @@
-name: openshift-gitops-workshop
-title: OpenShift GitOps Workshop
+name: openshift-4-windows-containers-demo
+title: OpenShift 4 Windows Containers Demo
 version: master
 nav:
   - modules/ROOT/nav.adoc
