@@ -11,7 +11,6 @@ ssh chernand-redhat.com@bastion.lax-e35b.sandbox886.opentlc.com
 Make sure you become the `ec2-user` as well.
 
 [.console-input]
-[source,bash,subs="attributes+,+macros"]
 ----
 sudo su - ec2-user
 ----
@@ -27,7 +26,6 @@ oc get nodes
 ----
 
 [.console-output]
-[source,yaml,subs="attributes+,+macros"]
 ----
 NAME                                         STATUS   ROLES                  AGE    VERSION
 ip-10-0-162-134.us-east-2.compute.internal   Ready    worker                 156m   v1.25.10+3fe2906
@@ -46,7 +44,6 @@ oc get nodes -l kubernetes.io/os=windows
 ----
 
 [.console-output]
-[source,yaml,subs="attributes+,+macros"]
 ----
 NAME                                        STATUS   ROLES     AGE     VERSION
 ip-10-0-237-81.us-east-2.compute.internal   Ready    worker   139m   v1.25.16+1eb8682
