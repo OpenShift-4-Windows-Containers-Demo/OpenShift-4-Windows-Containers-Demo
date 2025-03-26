@@ -1,6 +1,6 @@
 # Getting familiar with the Installation
 
-In this module, we'll get familiar with the cluster and the install of the Windows Node. If you haven't done already, login to the bastion node provided by the RHPDS email.
+In this module, we'll get familiar with the cluster and the install of the Windows Node. If you haven't done so already, login to the bastion node provided by the RHPDS email.
 
 [.console-input]
 [source,bash,subs="attributes+,+macros"]
