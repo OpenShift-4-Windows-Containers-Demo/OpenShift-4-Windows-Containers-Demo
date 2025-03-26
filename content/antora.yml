@@ -12,10 +12,10 @@ asciidoc:
     page-links:
     - url: https://redhat.com
       text: Red Hat
-    - url: https://docs.openshift.com/gitops
-      text: OpenShift GitOps
-    - url: https://argo-cd.readthedocs.io/en/stable/
-      text: Argo CD
+    - url: https://www.redhat.com/en/technologies/cloud-computing/openshift
+      text: OpenShift
+    - url: https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/windows_container_support_for_openshift/windows-container-overview
+      text: OpenShift support for Windows Containers
     console_url: URL_PLACEHOLDER
     login_command: LOGIN_COMMAND_PLACEHOLDER
     gitops_revision: REVISION_PLACEHOLDER
