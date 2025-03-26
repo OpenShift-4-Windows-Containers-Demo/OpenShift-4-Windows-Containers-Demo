@@ -4,8 +4,7 @@ Welcome to the OpenShift Windows Containers quickstart demo guide!
 
 ## Release Notes
 
-- We've pushed OpenShift to 4.12.
-- Please be aware that starting from version 4.11, the external Prometheus console has been phased out. This workshop is not intended to be used for Prometheus or Grafana.
+- Please be aware that the external Prometheus console has been phased out since OCP 4.11. This workshop is not intended to be used for Prometheus or Grafana.
 - Please note that the NetCandyStore modules are currently unavaliable in this lab guide.
 
 image::WMCOS.png[]
