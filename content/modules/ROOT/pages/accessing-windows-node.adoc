@@ -1,12 +1,12 @@
 # Accessing The Windows Node
 
-The Windows Node is installed with Windows Server 2019 Datacenter. This installaton does NOT include the familiar Windows UI. Also, since we are on AWS, RDP isn't enabled anyway. So how do you access the Windows Node?
+The Windows Node is installed with Windows Server 2019 Datacenter. This installation does NOT include the familiar Windows UI. Also, since we are on AWS, RDP isn't enabled anyway. So how do you access the Windows Node?
 
 The same way as you do Linux nodes: SSH
 
 ## Logging into your node
 
-This demo/quickstart deployed an "ssh conainter" so that you can ssh into this host. Verify that it's running.
+This demo/quickstart deployed an "ssh container" so that you can ssh into this host. Verify that it's running.
 
 [.console-input]
 [source,bash,subs="attributes+,+macros"]
@@ -50,7 +50,7 @@ This will give you a shell prompt:
 sh-4.4$
 ----
 
-You can then run the ssh script (built into the contianer) providing the Windows Node nodename as an argument. Example:
+You can then run the ssh script (built into the container) providing the Windows Node nodename as an argument. Example:
 
 [.console-output]
 ----
@@ -77,7 +77,7 @@ PS C:\Users\Administrator> docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES 
 ----
 
-You can also see the kubernetes processes, and the network overlay running on the Windows Node.
+You can also see the Kubernetes processes, and the network overlay running on the Windows Node.
 
 [.console-input]
 [source,bash,subs="attributes+,+macros"]
@@ -97,9 +97,9 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
     249      22    30048      41404   1,325.14   3408   0 kube-proxy
 ----
 
-These are the main components needed to run a Windows Node. Remember that this node is managed the same way as RHCOS, Via the platform; so you won't have to do much with this Windows Node.
+These are the main components needed to run a Windows Node. Remember that this node is managed the same way as RHCOS, via the platform; so you won't have to do much with this Windows Node.
 
-The base Windows Server docker image has been prepulled for you. You should be able to see it by running the `docker images` command in the PowerShell promt.
+The base Windows Server docker image has been prepulled for you. You should be able to see it by running the `docker images` command in the PowerShell prompt.
 
 [.console-output]
 ----
