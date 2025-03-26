@@ -2,45 +2,70 @@
 
 In this module, we'll get familiar with the cluster and the install of the Windows Node. If you haven't done already, login to the bastion node provided by the RHPDS email.
 
-```shell
-$ ssh chernand-redhat.com@bastion.lax-e35b.sandbox886.opentlc.com
-```
+[.console-input]
+[source,bash,subs="attributes+,+macros"]
+----
+ssh chernand-redhat.com@bastion.lax-e35b.sandbox886.opentlc.com
+----
 
 Make sure you become the `ec2-user` as well.
 
-```shell
-$ sudo su - ec2-user
-```
+[.console-input]
+[source,bash,subs="attributes+,+macros"]
+----
+sudo su - ec2-user
+----
 
 ## Windows Node
 
 The Windows Node appears just like any other node on OpenShift.
 
-```shell
-$ oc get nodes
+[.console-input]
+[source,bash,subs="attributes+,+macros"]
+----
+oc get nodes
+----
+
+[.console-output]
+[source,yaml,subs="attributes+,+macros"]
+----
 NAME                                         STATUS   ROLES                  AGE    VERSION
 ip-10-0-162-134.us-east-2.compute.internal   Ready    worker                 156m   v1.25.10+3fe2906
 ip-10-0-175-245.us-east-2.compute.internal   Ready    control-plane,master   169m   v1.25.10+3fe2906
 ip-10-0-223-233.us-east-2.compute.internal   Ready    worker                 156m   v1.25.10+3fe2906
 ip-10-0-231-101.us-east-2.compute.internal   Ready    worker                 156m   v1.25.10+3fe2906
 ip-10-0-237-81.us-east-2.compute.internal    Ready    worker                 138m   v1.25.16+1eb8682
-```
+----
 
 This node is labeled, so you know which one is a windows node.
 
-```shell
-$ oc get nodes -l kubernetes.io/os=windows
+[.console-input]
+[source,bash,subs="attributes+,+macros"]
+----
+oc get nodes -l kubernetes.io/os=windows
+----
+
+[.console-output]
+[source,yaml,subs="attributes+,+macros"]
+----
 NAME                                        STATUS   ROLES     AGE     VERSION
 ip-10-0-237-81.us-east-2.compute.internal   Ready    worker   139m   v1.25.16+1eb8682
-```
+----
 
 You can see what version of the OS you're running with the `-o wide` option.
 
-```shell
-$ oc get nodes -l kubernetes.io/os=windows -o wide
+[.console-input]
+[source,bash,subs="attributes+,+macros"]
+----
+oc get nodes -l kubernetes.io/os=windows -o wide
+----
+
+[.console-output]
+[source,yaml,subs="attributes+,+macros"]
+----
 NAME                                        STATUS   ROLES    AGE    VERSION            INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION    CONTAINER-RUNTIME
 ip-10-0-237-81.us-east-2.compute.internal   Ready    worker   140m   v1.25.16+1eb8682   10.0.237.81   <none>        Windows Server 2019 Datacenter   10.0.17763.4010   containerd://1.6.24-7-gb93c35c9c
-```
+----
 
 As you can see this is running Windows Server 2019 Datacenter, and the container runtime is docker.
 
