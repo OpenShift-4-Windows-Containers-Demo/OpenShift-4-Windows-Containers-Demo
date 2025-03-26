@@ -8,9 +8,7 @@ Welcome to the OpenShift Windows Containers quickstart demo guide!
 - Please be aware that starting from version 4.11, the external Prometheus console has been phased out. This workshop is not intended to be used for Prometheus or Grafana.
 - Please note that the NetCandyStore modules are currently unavaliable in this lab guide.
 
-
 image::WMCOS.png[]
-
 
 That email has all the information you need in order to test/demo Windows Containers. This includes instructions on how to ssh into the bastion host. Go ahead and do that now. Example:
 
