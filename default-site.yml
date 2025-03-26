@@ -1,7 +1,7 @@
 ---
 site:
   title: OpenShift 4 Windows Containers Demo
-  url: https://openshiftdemos.github.io/OpenShift-4-Windows-Containers-Demo
+  url: https://openshift-4-windows-containers-demo.github.io/OpenShift-4-Windows-Containers-Demo/openshift-4-windows-containers-demo
   start_page: openshift-4-windows-containers-demo::index.adoc
 
 content:
