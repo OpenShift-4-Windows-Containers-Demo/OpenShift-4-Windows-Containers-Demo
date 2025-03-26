@@ -61,3 +61,4 @@ windows-machine-config-operator.v3.1.0   Windows Machine Config Operator   3.1.0
 ```
 
 That concludes this demo around OpenShift 4 and Windows Containers. Thanks!
+
