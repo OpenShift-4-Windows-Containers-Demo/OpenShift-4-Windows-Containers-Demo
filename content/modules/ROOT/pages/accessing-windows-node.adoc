@@ -69,12 +69,12 @@ PS C:\Users\Administrator>
 
 ## Exploring the Node
 
-Once you are in, you can see that the docker process is running.
+Once you are in, you can see that the containerd process is running.
 
 [.console-output]
 ----
-PS C:\Users\Administrator> docker ps
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES 
+PS C:\Users\Administrator> crictl ps
+CONTAINER           IMAGE               CREATED             STATE               NAME                ATTEMPT             POD ID
 ----
 
 You can also see the Kubernetes processes, and the network overlay running on the Windows Node.
@@ -82,16 +82,16 @@ You can also see the Kubernetes processes, and the network overlay running on th
 [.console-input]
 [source,bash,subs="attributes+,+macros"]
 ----
-Get-Process | ?{ $_.ProcessName -match "kube|overlay|docker" }
+Get-Process | ?{ $_.ProcessName -match "kube|overlay|containerd" }
 ----
 
 [.console-output]
 ----
-PS C:\Users\Administrator> Get-Process | ?{ $_.ProcessName -match "kube|overlay|docker" } 
+PS C:\Users\Administrator> Get-Process | ?{ $_.ProcessName -match "kube|overlay|containerd" }
 
 Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
-    307      19    62876      44124     124.34   2524   0 dockerd
+    307      19    62876      44124     124.34   2524   0 containerd
     229      16    35112      43112     173.63   4344   0 hybrid-overlay-node
     379      25    45636      70860      40.95    984   0 kubelet
     249      22    30048      41404   1,325.14   3408   0 kube-proxy
@@ -99,13 +99,13 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 
 These are the main components needed to run a Windows Node. Remember that this node is managed the same way as RHCOS, via the platform; so you won't have to do much with this Windows Node.
 
-The base Windows Server docker image has been prepulled for you. You should be able to see it by running the `docker images` command in the PowerShell prompt.
+The base Windows Server container image has been prepulled for you. You should be able to see it by running the `crictl images` command in the PowerShell prompt.
 
 [.console-output]
 ----
-PS C:\Users\Administrator> docker images
-REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE   
-mcr.microsoft.com/windows/servercore   ltsc2019            715aaeac112d        5 weeks ago         5.06GB
+PS C:\Users\Administrator> crictl images
+IMAGE                                    TAG                 IMAGE ID            SIZE
+mcr.microsoft.com/windows/servercore     ltsc2019            715aaeac112d        5.06GB
 ----
 
 > Don't be alarmed if you don't see it! You can pull the image yourself. We'll go over this in a different module

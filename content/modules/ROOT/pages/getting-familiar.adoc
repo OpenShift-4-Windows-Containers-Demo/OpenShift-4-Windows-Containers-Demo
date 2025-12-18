@@ -63,6 +63,6 @@ NAME                                        STATUS   ROLES    AGE    VERSION    
 ip-10-0-237-81.us-east-2.compute.internal   Ready    worker   140m   v1.25.16+1eb8682   10.0.237.81   <none>        Windows Server 2019 Datacenter   10.0.17763.4010   containerd://1.6.24-7-gb93c35c9c
 ----
 
-As you can see this is running Windows Server 2019 Datacenter, and the container runtime is docker.
+As you can see this is running Windows Server 2019 Datacenter, and the container runtime is containerd.
 
 This is installed/managed/controlled by the Windows Machine Config Operator (WMCO). We will explore in a bit.
