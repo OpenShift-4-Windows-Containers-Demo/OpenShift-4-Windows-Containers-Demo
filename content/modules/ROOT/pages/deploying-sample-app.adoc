@@ -91,23 +91,6 @@ Then using the provided shellscript to login to the Windows Node via nodename
 sh-4.4$ sshcmd.sh ip-10-0-138-9.ec2.internal
 ----
 
-To view Windows containers running on the node, you need to install the `crictl` tool
-to interact with the containerd runtime.
-
-[.console-input]
-[source,bash,subs="attributes+,+macros"]
-----
-$ProgressPreference = "SilentlyContinue"; wget https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.27.0/crictl-v1.27.0-windows-amd64.tar.gz -o crictl-v1.27.0-windows-amd64.tar.gz; tar -xvf crictl-v1.27.0-windows-amd64.tar.gz -C C:\Windows\
-----
-
-Now lets configure crictl.
-
-[.console-input]
-[source,bash,subs="attributes+,+macros"]
-----
-crictl config --set runtime-endpoint="npipe:\\\\.\\pipe\\containerd-containerd"
-----
-
 Here, you can see the Windows container running on the node.
 
 [.console-input]
